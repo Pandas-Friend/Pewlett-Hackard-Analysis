@@ -197,8 +197,20 @@ SELECT ri.emp_no,
     ri.first_name,
 ri.last_name,
 	de.dept_no
--- INTO sales_info
+INTO sales_info
 FROM retirement_info as ri
 LEFT JOIN dept_emp AS de
 ON (ri.emp_no = de.emp_no)
 WHERE dept_no = 'd007';
+
+SELECT * FROM departments
+-- Sales and Development teams
+SELECT ri.emp_no,
+    ri.first_name,
+ri.last_name,
+    de.dept_no
+INTO sales_dev_info
+FROM retirement_info as ri
+LEFT JOIN dept_emp AS de
+ON (ri.emp_no = de.emp_no)
+WHERE dept_no IN ('d007', 'd005');
