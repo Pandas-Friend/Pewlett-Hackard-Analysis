@@ -2,7 +2,7 @@
 ## Overview
 The purpose of this project was to determine the number of retiring employees per title and identify employees who are eligible to participate in a mentorship program.
 
-##Results
+## Results
 -	90,398 employees are retirement age
 -	29,414 of the retirement age employees are Senior Engineers
 -	28,254 of the retirement age employees are Senior Staff
